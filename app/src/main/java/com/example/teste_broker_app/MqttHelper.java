@@ -110,7 +110,7 @@ public class MqttHelper {
                 @Override
                 public void onSuccess(IMqttToken asyncActionToken) {
                     Log.w("Mqtt", "Subscribed!");
-                    if (activity.equals("MainActivity")) {
+                    if (activity.equals("Login")) {
                         publish("Conectado ao tópico!", topic.replaceAll("#", activity+"/ConnectionStatus"));
                     }
                 }
